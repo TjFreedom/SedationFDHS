@@ -1,5 +1,5 @@
 # robots.txt — FDHS Sedation Dentistry
-# https://sedationfdhs.com
+# https://sedationfdhs.netlify.app
 
 User-agent: *
 Allow: /
@@ -27,4 +27,4 @@ User-agent: DuckDuckBot
 Allow: /
 
 # Sitemap location
-Sitemap: https://sedationfdhs.com/sitemap.xml
+Sitemap: https://sedationfdhs.netlify.app/sitemap.xml

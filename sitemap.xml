@@ -5,12 +5,12 @@
 
   <!-- Homepage / Main Sedation Services Page -->
   <url>
-    <loc>https://sedationfdhs.com/</loc>
+    <loc>https://sedationfdhs.netlify.app/</loc>
     <lastmod>2026-03-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://sedationfdhs.com/images/og-sedation-dentistry.jpg</image:loc>
+      <image:loc>https://sedationfdhs.netlify.app/images/og-sedation-dentistry.jpg</image:loc>
       <image:title>FDHS Sedation Dentistry — Bear, Delaware</image:title>
       <image:caption>Dental sedation services in Bear, Glasgow, and Newark, Delaware</image:caption>
     </image:image>
@@ -18,7 +18,7 @@
 
   <!-- Nitrous Oxide anchor -->
   <url>
-    <loc>https://sedationfdhs.com/#nitrous-heading</loc>
+    <loc>https://sedationfdhs.netlify.app/#nitrous-heading</loc>
     <lastmod>2026-03-05</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
@@ -26,7 +26,7 @@
 
   <!-- Oral Conscious Sedation anchor -->
   <url>
-    <loc>https://sedationfdhs.com/#oral-heading</loc>
+    <loc>https://sedationfdhs.netlify.app/#oral-heading</loc>
     <lastmod>2026-03-05</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
@@ -34,7 +34,7 @@
 
   <!-- IV Sedation anchor -->
   <url>
-    <loc>https://sedationfdhs.com/#iv-heading</loc>
+    <loc>https://sedationfdhs.netlify.app/#iv-heading</loc>
     <lastmod>2026-03-05</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
@@ -42,7 +42,7 @@
 
   <!-- FAQ section -->
   <url>
-    <loc>https://sedationfdhs.com/#faq</loc>
+    <loc>https://sedationfdhs.netlify.app/#faq</loc>
     <lastmod>2026-03-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -50,7 +50,7 @@
 
   <!-- Contact section -->
   <url>
-    <loc>https://sedationfdhs.com/#contact</loc>
+    <loc>https://sedationfdhs.netlify.app/#contact</loc>
     <lastmod>2026-03-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
