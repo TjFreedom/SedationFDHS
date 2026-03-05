@@ -1,0 +1,30 @@
+# robots.txt — FDHS Sedation Dentistry
+# https://sedationfdhs.com
+
+User-agent: *
+Allow: /
+
+# Block common non-content paths
+Disallow: /admin/
+Disallow: /wp-admin/
+Disallow: /cgi-bin/
+Disallow: /*.php$
+Disallow: /tmp/
+
+# Allow all major search engine crawlers explicitly
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 2
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# Sitemap location
+Sitemap: https://sedationfdhs.com/sitemap.xml
