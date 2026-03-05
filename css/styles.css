@@ -335,6 +335,58 @@ p:last-child { margin-bottom: 0; }
 }
 .mobile-nav a:hover { background: var(--color-primary-light); color: var(--color-primary); }
 
+/* ===== PAGE HERO (inner pages) ===== */
+.page-hero {
+  background: linear-gradient(135deg, #0A1535 0%, #1D3780 100%);
+  color: var(--color-white);
+  padding: 2.75rem 0 2.5rem;
+}
+.page-hero h1 {
+  color: var(--color-white);
+  font-size: clamp(1.6rem, 3.5vw, 2.25rem);
+  margin: 0 0 0.5rem;
+  line-height: 1.25;
+}
+.page-hero-sub {
+  color: rgba(255,255,255,0.8);
+  font-size: 1rem;
+  max-width: 640px;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* ===== BREADCRUMB ===== */
+.breadcrumb { margin-bottom: 1rem; }
+.breadcrumb ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 0.35rem;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 0.8rem;
+}
+.breadcrumb li + li::before {
+  content: '›';
+  color: rgba(255,255,255,0.4);
+  margin-right: 0.35rem;
+}
+.breadcrumb a { color: rgba(255,255,255,0.65); text-decoration: none; }
+.breadcrumb a:hover { color: var(--color-accent); }
+.breadcrumb [aria-current="page"] { color: var(--color-accent); font-weight: 600; }
+
+/* ===== SERVICE PREVIEW CARDS (homepage teasers) ===== */
+.option-card.option-preview {
+  text-align: center;
+  align-items: center;
+}
+.option-card.option-preview .option-level { margin-left: auto; margin-right: auto; }
+.services-preview-cta { text-align: center; margin-top: 2.25rem; }
+
+/* ===== FAQ TEASER (homepage) ===== */
+.faq-teaser-cta { text-align: center; margin-top: 1.75rem; }
+
 /* ===== HERO ===== */
 .hero {
   position: relative;

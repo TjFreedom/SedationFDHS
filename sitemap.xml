@@ -3,7 +3,7 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
-  <!-- Homepage / Main Sedation Services Page -->
+  <!-- Homepage -->
   <url>
     <loc>https://sedationfdhs.netlify.app/</loc>
     <lastmod>2026-03-05</lastmod>
@@ -16,44 +16,68 @@
     </image:image>
   </url>
 
-  <!-- Nitrous Oxide anchor -->
+  <!-- Sedation Options / Services Page -->
   <url>
-    <loc>https://sedationfdhs.netlify.app/#nitrous-heading</loc>
-    <lastmod>2026-03-05</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Oral Conscious Sedation anchor -->
-  <url>
-    <loc>https://sedationfdhs.netlify.app/#oral-heading</loc>
-    <lastmod>2026-03-05</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- IV Sedation anchor -->
-  <url>
-    <loc>https://sedationfdhs.netlify.app/#iv-heading</loc>
-    <lastmod>2026-03-05</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- FAQ section -->
-  <url>
-    <loc>https://sedationfdhs.netlify.app/#faq</loc>
+    <loc>https://sedationfdhs.netlify.app/services.html</loc>
     <lastmod>2026-03-05</lastmod>
     <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Nitrous Oxide anchor on services page -->
+  <url>
+    <loc>https://sedationfdhs.netlify.app/services.html#nitrous-heading</loc>
+    <lastmod>2026-03-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Oral Conscious Sedation anchor on services page -->
+  <url>
+    <loc>https://sedationfdhs.netlify.app/services.html#oral-heading</loc>
+    <lastmod>2026-03-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- IV Sedation anchor on services page -->
+  <url>
+    <loc>https://sedationfdhs.netlify.app/services.html#iv-heading</loc>
+    <lastmod>2026-03-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- General Anesthesia anchor on services page -->
+  <url>
+    <loc>https://sedationfdhs.netlify.app/services.html#ga-heading</loc>
+    <lastmod>2026-03-05</lastmod>
+    <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
 
-  <!-- Contact section -->
+  <!-- FAQ Page -->
   <url>
-    <loc>https://sedationfdhs.netlify.app/#contact</loc>
+    <loc>https://sedationfdhs.netlify.app/faq.html</loc>
     <lastmod>2026-03-05</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Contact / Book Appointment Page -->
+  <url>
+    <loc>https://sedationfdhs.netlify.app/contact.html</loc>
+    <lastmod>2026-03-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Privacy Policy -->
+  <url>
+    <loc>https://sedationfdhs.netlify.app/privacy-policy.html</loc>
+    <lastmod>2026-03-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
 
 </urlset>
