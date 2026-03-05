@@ -5,12 +5,13 @@
 
 /* ===== CSS CUSTOM PROPERTIES ===== */
 :root {
-  --color-primary:       #1a6fb5;
-  --color-primary-dark:  #145a97;
-  --color-primary-light: #e8f2fb;
-  --color-accent:        #2bb5a0;
-  --color-accent-dark:   #1e9b89;
-  --color-dark:          #1a2332;
+  /* ── Brand palette: Sleepy Tooth Sedation ── */
+  --color-primary:       #1D3780;  /* Brand navy blue */
+  --color-primary-dark:  #152D6B;  /* Dark navy */
+  --color-primary-light: #EBF0FB;  /* Light navy tint */
+  --color-accent:        #F5C318;  /* Brand gold */
+  --color-accent-dark:   #C9A010;  /* Dark gold */
+  --color-dark:          #0F1D4A;  /* Deep navy (headings, footer) */
   --color-text:          #374151;
   --color-muted:         #6b7280;
   --color-border:        #e5e7eb;
@@ -152,14 +153,14 @@ p:last-child { margin-bottom: 0; }
 }
 
 .btn-primary {
-  background: var(--color-primary);
-  color: var(--color-white);
-  border-color: var(--color-primary);
+  background: var(--color-accent);
+  color: var(--color-dark);
+  border-color: var(--color-accent);
 }
 .btn-primary:hover {
-  background: var(--color-primary-dark);
-  border-color: var(--color-primary-dark);
-  color: var(--color-white);
+  background: var(--color-accent-dark);
+  border-color: var(--color-accent-dark);
+  color: var(--color-dark);
   transform: translateY(-1px);
   box-shadow: var(--shadow-md);
 }
@@ -188,11 +189,13 @@ p:last-child { margin-bottom: 0; }
 
 .btn-white {
   background: var(--color-white);
-  color: var(--color-primary);
+  color: var(--color-dark);
   border-color: var(--color-white);
 }
 .btn-white:hover {
-  background: var(--color-primary-light);
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+  color: var(--color-dark);
   transform: translateY(-1px);
   box-shadow: var(--shadow-md);
 }
@@ -336,7 +339,7 @@ p:last-child { margin-bottom: 0; }
 .hero {
   position: relative;
   overflow: hidden;
-  background: linear-gradient(135deg, #0d3a6e 0%, #1a6fb5 40%, #2bb5a0 100%);
+  background: linear-gradient(135deg, #0A1535 0%, #1D3780 55%, #243D8F 100%);
   padding: clamp(3rem, 10vw, 7rem) 0;
   color: var(--color-white);
 }
@@ -345,7 +348,7 @@ p:last-child { margin-bottom: 0; }
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse 800px 600px at 70% 50%, rgba(43,181,160,0.15) 0%, transparent 70%),
+    radial-gradient(ellipse 800px 600px at 70% 50%, rgba(245,195,24,0.10) 0%, transparent 70%),
     radial-gradient(ellipse 600px 400px at 20% 80%, rgba(255,255,255,0.05) 0%, transparent 60%);
   pointer-events: none;
 }
@@ -406,7 +409,7 @@ p:last-child { margin-bottom: 0; }
   font-size: 0.875rem;
   font-weight: 500;
 }
-.trust-item span { color: #7ee8d8; font-size: 1rem; }
+.trust-item span { color: #F5C318; font-size: 1rem; }
 
 .hero-card {
   background: var(--color-white);
@@ -561,10 +564,10 @@ p:last-child { margin-bottom: 0; }
   margin-bottom: 0.75rem;
   width: fit-content;
 }
-.level-1 { background: #d1fae5; color: #065f46; }
-.level-2 { background: #dbeafe; color: #1e3a8a; }
-.level-3 { background: #fde68a; color: #78350f; }
-.level-4 { background: #fce7f3; color: #831843; }
+.level-1 { background: #FEF7DC; color: #7A5E08; }   /* Gold-tinted — mild/gentle */
+.level-2 { background: #E6ECFF; color: #1D3780; }   /* Light navy — moderate */
+.level-3 { background: #C8D4F0; color: #0F1D4A; }   /* Mid navy — deep sedation */
+.level-4 { background: #F0D6D6; color: #7A1A1A; }   /* Red-tinted — full anesthesia */
 
 .option-card h3 { font-family: var(--font-body); margin-bottom: 0.5rem; }
 
@@ -883,7 +886,7 @@ p:last-child { margin-bottom: 0; }
 
 /* ===== CTA BANNER ===== */
 .cta-banner {
-  background: linear-gradient(135deg, #0d3a6e 0%, #1a6fb5 60%, #2bb5a0 100%);
+  background: linear-gradient(135deg, #0A1535 0%, #1D3780 70%, #243D8F 100%);
   padding: clamp(2.5rem, 6vw, 4.5rem) 0;
 }
 .cta-inner {
@@ -947,7 +950,7 @@ p:last-child { margin-bottom: 0; }
 .form-group select:focus,
 .form-group textarea:focus {
   border-color: var(--color-primary);
-  box-shadow: 0 0 0 3px rgba(26,111,181,0.15);
+  box-shadow: 0 0 0 3px rgba(29,55,128,0.18);
 }
 .form-group textarea { resize: vertical; min-height: 100px; }
 
@@ -1153,8 +1156,8 @@ p:last-child { margin-bottom: 0; }
 /* ===== AI OVERVIEW / QUICK ANSWER BLOCKS ===== */
 /* These blocks are speakable-tagged and optimized for Google AI Overview extraction */
 .ai-definition {
-  background: var(--color-primary-light);
-  border-left: 4px solid var(--color-primary);
+  background: #FEF9E6;
+  border-left: 4px solid var(--color-accent);
   border-radius: 0 var(--radius-md) var(--radius-md) 0;
   padding: 1.25rem 1.5rem;
   margin-bottom: 1.5rem;
@@ -1162,11 +1165,11 @@ p:last-child { margin-bottom: 0; }
   line-height: 1.7;
   color: var(--color-text);
 }
-.ai-definition strong { color: var(--color-primary-dark); }
+.ai-definition strong { color: var(--color-dark); }
 
 .ai-summary {
   background: #fff;
-  border: 1px solid #d1e5f7;
+  border: 1px solid rgba(245,195,24,0.4);
   border-radius: var(--radius-md);
   padding: 1.25rem 1.5rem;
   margin-bottom: 2rem;
@@ -1192,7 +1195,7 @@ p:last-child { margin-bottom: 0; }
   color: var(--color-primary);
   font-weight: 600;
 }
-.ai-summary strong { color: var(--color-heading); }
+.ai-summary strong { color: var(--color-dark); }
 
 /* ===== PRINT ===== */
 @media print {
