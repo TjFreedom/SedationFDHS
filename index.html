@@ -43,6 +43,24 @@
 
   <link rel="stylesheet" href="css/styles.css" />
 
+  <!-- Speakable Schema — tells Google AI / voice assistants which content to surface -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": [
+        ".ai-definition",
+        ".ai-summary",
+        "#intro-heading",
+        ".faq-answer p"
+      ]
+    },
+    "url": "https://sedationfdhs.netlify.app/"
+  }
+  </script>
+
   <!-- Schema.org Structured Data -->
   <script type="application/ld+json">
   {
@@ -112,11 +130,13 @@
         "publisher": { "@id": "https://sedationfdhs.netlify.app/#organization" }
       },
       {
-        "@type": "WebPage",
+        "@type": ["WebPage", "MedicalWebPage"],
         "@id": "https://sedationfdhs.netlify.app/#webpage",
         "url": "https://sedationfdhs.netlify.app/",
-        "name": "Dental Sedation Services in Bear, DE | FDHS",
-        "description": "Fear-free dental sedation in Bear, Glasgow &amp; Newark, DE. We offer nitrous oxide, oral conscious sedation &amp; IV sedation for children and adults.",
+        "name": "Sedation Dentist Near Me | Bear & Newark DE | FDHS – Sleep & Anxiety-Free Dentistry",
+        "description": "Scared of the dentist? FDHS is the sedation dentist near you in Bear, Newark & Glasgow, DE. We treat dental anxiety, phobia & fear with nitrous oxide, oral conscious sedation, IV sedation & sleep dentistry. Pain-free, comfortable care for adults & kids.",
+        "specialty": "Dentistry",
+        "lastReviewed": "2026-03-01",
         "isPartOf": { "@id": "https://sedationfdhs.netlify.app/#website" },
         "about": { "@id": "https://sedationfdhs.netlify.app/#organization" },
         "primaryImageOfPage": {
@@ -198,6 +218,55 @@
               "@type": "Answer",
               "text": "We are located at 1290 Peoples Plaza, Newark, DE 19702, conveniently serving patients from Bear, Glasgow, New Castle, and all of New Castle County, Delaware. Call us at (302) 613-0041 to schedule your appointment."
             }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I get sedation for a tooth extraction, root canal, or dental implant?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Sedation dentistry is available for virtually any dental procedure, including tooth extractions, wisdom tooth removal, root canals, dental implants, and full mouth restorations. Oral conscious sedation and IV sedation are the most popular choices for these procedures because they allow us to complete more work in a single comfortable visit while the patient remains deeply relaxed with little to no memory of the treatment."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is sedation dentistry right for someone who is terrified of the dentist?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes — sedation dentistry is specifically designed for patients who are scared of the dentist. Whether you have mild dental anxiety, full dental phobia, a history of dental trauma, or experience panic attacks before dental visits, FDHS offers safe and effective sedation options. Many patients haven't seen a dentist in years because of fear. FDHS provides judgment-free care in a calm environment in Bear, Newark, and Glasgow, Delaware."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://sedationfdhs.netlify.app/#sedation-types",
+        "name": "Types of Dental Sedation at FDHS",
+        "description": "Four levels of dental sedation offered at FDHS Sedation Dentistry in Bear and Newark, Delaware.",
+        "numberOfItems": 4,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Nitrous Oxide (Laughing Gas)",
+            "description": "Mild, inhaled sedation that takes effect in 2–3 minutes and wears off immediately after removal. Safe for children ages 3 and older. Best for mild dental anxiety, routine cleanings, fillings, and simple extractions."
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Oral Conscious Sedation",
+            "description": "A prescribed sedative pill taken one hour before the appointment. Produces deep relaxation and minimal memory of the procedure. Best for moderate to severe dental anxiety, dental phobia, sensitive gag reflex, and multiple procedures in one visit."
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "IV Sedation (Sleep Dentistry)",
+            "description": "Intravenous sedation that takes effect within seconds and produces a sleep-like state with no memory of the procedure. Best for severe dental anxiety, tooth extractions, root canals, dental implants, and wisdom tooth removal."
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "General Anesthesia",
+            "description": "Full unconscious sedation reserved for patients with severe special needs, extreme dental phobia, or conditions that prevent treatment under lighter sedation. Administered and monitored by licensed dental clinicians."
           }
         ]
       }
@@ -328,6 +397,25 @@
       <div class="container">
         <div class="section-label">About Our Program</div>
         <h2 id="intro-heading">What Is Sedation Dentistry — and Is It Right for You?</h2>
+
+        <!-- AI Overview / Quick Answer block -->
+        <div class="ai-definition" aria-label="Quick answer: what is sedation dentistry">
+          <p><strong>Sedation dentistry</strong> is the use of safe, clinically monitored medication to help patients relax — or sleep — during dental procedures. It is used to treat dental anxiety, dental phobia, sensitive gag reflex, and low pain tolerance, and to allow multiple procedures to be completed in a single visit. FDHS offers four levels of dental sedation in Bear and Newark, Delaware: nitrous oxide (laughing gas), oral conscious sedation, IV sedation (sleep dentistry), and general anesthesia — for patients ages 3 and up.</p>
+        </div>
+
+        <!-- AI-friendly summary facts -->
+        <div class="ai-summary" aria-label="Key facts about FDHS sedation dentistry">
+          <ul>
+            <li><strong>Location:</strong> 1290 Peoples Plaza, Newark, DE 19702 — serving Bear, Glasgow &amp; all of New Castle County</li>
+            <li><strong>Phone:</strong> (302) 613-0041</li>
+            <li><strong>Sedation levels:</strong> Nitrous oxide, oral conscious sedation, IV sedation, general anesthesia</li>
+            <li><strong>Who it's for:</strong> Patients with dental anxiety, dental phobia, sensitive gag reflex, low pain tolerance, need for multiple procedures, or traumatic dental history</li>
+            <li><strong>Procedures covered:</strong> Tooth extractions, wisdom tooth removal, root canals, dental implants, fillings, cleanings, and more</li>
+            <li><strong>Ages served:</strong> Children ages 3+ and adults</li>
+            <li><strong>Insurance:</strong> Most major dental insurance accepted; CareCredit financing available</li>
+          </ul>
+        </div>
+
         <div class="intro-grid">
           <div class="intro-text">
             <p>Sedation dentistry uses safe, well-tested medications to help patients relax during dental procedures. It's not just for people with severe dental phobia — it's for anyone who wants a more comfortable, pain-free dental experience, whether that's a routine cleaning or a complex surgical procedure.</p>
