@@ -512,8 +512,8 @@ p:last-child { margin-bottom: 0; }
 /* ===== SEDATION OPTIONS GRID ===== */
 .options-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.75rem;
   margin-top: 2rem;
 }
 
@@ -533,16 +533,16 @@ p:last-child { margin-bottom: 0; }
   box-shadow: var(--shadow-lg);
 }
 .option-card.featured {
-  border-color: var(--color-primary);
-  box-shadow: 0 0 0 2px var(--color-primary), var(--shadow-md);
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 2px var(--color-accent), var(--shadow-md);
 }
 
 .option-badge {
   position: absolute;
   top: -0.75rem;
   right: 1.5rem;
-  background: var(--color-primary);
-  color: var(--color-white);
+  background: var(--color-accent);
+  color: var(--color-dark);
   font-size: 0.75rem;
   font-weight: 700;
   padding: 0.25rem 0.75rem;
@@ -1115,7 +1115,7 @@ p:last-child { margin-bottom: 0; }
   .hero-actions { flex-direction: column; }
   .hero-actions .btn { width: 100%; justify-content: center; }
 
-  .options-grid { grid-template-columns: 1fr; }
+  .options-grid { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
   .benefits-grid { grid-template-columns: 1fr; }
 
   .local-grid { grid-template-columns: 1fr; }
@@ -1151,6 +1151,7 @@ p:last-child { margin-bottom: 0; }
   .compare-table th, .compare-table td { padding: 0.65rem 0.75rem; }
 
   .communities-list { grid-template-columns: 1fr; }
+  .options-grid { grid-template-columns: 1fr; }
 }
 
 /* ===== AI OVERVIEW / QUICK ANSWER BLOCKS ===== */
