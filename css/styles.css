@@ -555,7 +555,7 @@ p:last-child { margin-bottom: 0; }
 /* ===== SEDATION OPTIONS GRID ===== */
 .options-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 1fr;
   gap: 1.75rem;
   margin-top: 2rem;
 }
