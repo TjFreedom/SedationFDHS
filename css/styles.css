@@ -552,6 +552,48 @@ p:last-child { margin-bottom: 0; }
 .callout-box p { font-size: 0.95rem; color: var(--color-text); }
 .callout-box strong { color: var(--color-primary); }
 
+/* Doctor card (intro section) */
+.doctor-card {
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--color-border);
+}
+.doctor-photo {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+.doctor-caption {
+  background: var(--color-primary);
+  color: var(--color-white);
+  padding: 1.25rem 1.5rem;
+}
+.doctor-caption strong {
+  display: block;
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+.doctor-caption span {
+  display: block;
+  font-size: 0.8rem;
+  opacity: 0.75;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  margin-bottom: 0.75rem;
+}
+.doctor-caption p {
+  font-size: 0.9rem;
+  opacity: 0.9;
+  font-style: italic;
+  margin: 0;
+  line-height: 1.55;
+}
+
 /* ===== SEDATION OPTIONS GRID ===== */
 .options-grid {
   display: grid;
@@ -814,6 +856,28 @@ p:last-child { margin-bottom: 0; }
 }
 .safety-list strong { display: block; color: var(--color-dark); margin-bottom: 0.25rem; }
 .safety-list p { font-size: 0.9rem; margin: 0; color: var(--color-muted); }
+
+/* Hero decorative SVG */
+.hero-deco-svg {
+  position: absolute;
+  right: -40px;
+  bottom: -30px;
+  width: 340px;
+  height: auto;
+  pointer-events: none;
+}
+
+/* Safety illustration */
+.safety-visual-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.safety-svg {
+  width: 240px;
+  height: auto;
+  filter: drop-shadow(0 8px 32px rgba(0,0,0,0.25));
+}
 
 .safety-badge-wrap { display: flex; justify-content: center; }
 .safety-badge {
@@ -1177,6 +1241,7 @@ p:last-child { margin-bottom: 0; }
 
   .safety-inner { gap: 2rem; }
   .safety-badge-wrap { display: none; }
+  .safety-visual-wrap { display: none; }
 }
 
 @media (max-width: 480px) {
