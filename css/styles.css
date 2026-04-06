@@ -1191,6 +1191,84 @@ p:last-child { margin-bottom: 0; }
 .address-block address { font-size: 0.9rem; line-height: 1.8; }
 .address-block a { color: var(--color-primary); font-weight: 600; }
 
+/* ===== LOCATIONS GRID ===== */
+.locations-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+}
+
+.location-card {
+  background: #fff;
+  border-radius: var(--radius-md);
+  border: 1px solid #e2e8f0;
+  border-top: 4px solid var(--color-primary);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.location-card-header {
+  margin-bottom: 0.5rem;
+}
+
+.location-badge {
+  display: inline-block;
+  background: var(--color-primary-light);
+  color: var(--color-primary);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  margin-bottom: 0.5rem;
+}
+
+.location-card h3 {
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin: 0;
+  color: var(--color-heading);
+}
+
+.location-card address {
+  font-style: normal;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--color-text);
+}
+
+.location-phone a,
+.location-email a {
+  color: var(--color-primary);
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+}
+.location-phone a:hover,
+.location-email a:hover { text-decoration: underline; }
+
+.location-hours {
+  font-size: 0.82rem;
+  color: var(--color-text);
+  line-height: 1.5;
+}
+
+.location-card .btn-sm {
+  margin-top: auto;
+  padding: 0.45rem 1rem;
+  font-size: 0.85rem;
+  align-self: flex-start;
+}
+
+@media (max-width: 900px) {
+  .locations-grid { grid-template-columns: 1fr; }
+}
+
 /* ===== CTA BANNER ===== */
 .cta-banner {
   background: linear-gradient(135deg, #0A1535 0%, #1D3780 70%, #243D8F 100%);
