@@ -180,6 +180,30 @@
     });
   }
 
+  /* ===== LOCATION MAP TABS ===== */
+  const locTabs = document.querySelectorAll('.loc-tab');
+
+  if (locTabs.length) {
+    locTabs.forEach(function (tab) {
+      tab.addEventListener('click', function () {
+        const targetId = tab.getAttribute('data-map');
+
+        // Update tab states
+        locTabs.forEach(function (t) {
+          t.classList.remove('active');
+          t.setAttribute('aria-selected', 'false');
+        });
+        tab.classList.add('active');
+        tab.setAttribute('aria-selected', 'true');
+
+        // Show the correct map panel
+        document.querySelectorAll('.map-panel').forEach(function (panel) {
+          panel.hidden = panel.id !== 'map-' + targetId;
+        });
+      });
+    });
+  }
+
   /* ===== FOOTER YEAR ===== */
   const yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
