@@ -1,5 +1,5 @@
 /**
- * FDHS Sedation Dentistry — Main JavaScript
+ * Bear Glasgow Dental — Main JavaScript
  * Handles: mobile nav, FAQ accordion, form validation, footer year
  */
 

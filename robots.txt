@@ -1,4 +1,4 @@
-# robots.txt — FDHS Sedation Dentistry
+# robots.txt — Bear Glasgow Dental
 # https://sedationfdhs.netlify.app
 
 User-agent: *
