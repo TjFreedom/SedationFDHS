@@ -1,4 +1,4 @@
-# Assets — FDHS Sedation Dentistry
+# Assets — Bear Glasgow Dental
 
 Drop your files into the appropriate subfolder:
 
