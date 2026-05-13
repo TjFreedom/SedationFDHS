@@ -463,6 +463,7 @@ p:last-child { margin-bottom: 0; }
   position: sticky;
   top: calc(var(--header-h) + 1rem);
 }
+.hero-card .btn { justify-content: center; }
 .card-title {
   font-family: var(--font-body);
   font-size: 1.25rem;
