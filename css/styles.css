@@ -746,6 +746,38 @@ p:last-child { margin-bottom: 0; }
 }
 .compare-table tbody td:first-child { font-weight: 600; color: var(--color-dark); }
 
+/* ===== SLEEP DENTISTRY CALLOUT ===== */
+.sleep-callout-grid {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 3rem;
+  align-items: center;
+  margin-top: 1.75rem;
+}
+.sleep-callout-text p { margin-bottom: 1rem; line-height: 1.75; }
+.sleep-callout-text .btn { margin-top: 0.5rem; }
+.sleep-callout-quote {
+  background: var(--color-primary);
+  border-radius: var(--radius-xl);
+  padding: 2.5rem 2rem;
+  text-align: center;
+}
+.sleep-callout-quote blockquote { margin: 0; }
+.sleep-callout-quote p {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  color: white;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+}
+.sleep-callout-quote cite {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--color-accent);
+  font-style: normal;
+  letter-spacing: 0.03em;
+}
+
 /* ===== WHO BENEFITS ===== */
 .benefits-grid {
   display: grid;
@@ -1423,6 +1455,8 @@ p:last-child { margin-bottom: 0; }
 
   .options-grid { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
   .benefits-grid { grid-template-columns: 1fr; }
+  .sleep-callout-grid { grid-template-columns: 1fr; }
+  .sleep-callout-quote { display: none; }
 
   .local-grid { grid-template-columns: 1fr; }
   .communities-list { grid-template-columns: 1fr 1fr; }

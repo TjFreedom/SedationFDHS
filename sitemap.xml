@@ -56,6 +56,14 @@
     <priority>0.7</priority>
   </url>
 
+  <!-- Sleep Dentistry Dedicated Page -->
+  <url>
+    <loc>https://delawaresedation.com/sleep-dentistry.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
   <!-- FAQ Page -->
   <url>
     <loc>https://delawaresedation.com/faq.html</loc>
