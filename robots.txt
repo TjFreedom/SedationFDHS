@@ -1,5 +1,5 @@
 # robots.txt — Bear Glasgow Dental
-# https://sedationfdhs.netlify.app
+# https://delawaresedation.com
 
 User-agent: *
 Allow: /
@@ -27,4 +27,4 @@ User-agent: DuckDuckBot
 Allow: /
 
 # Sitemap location
-Sitemap: https://sedationfdhs.netlify.app/sitemap.xml
+Sitemap: https://delawaresedation.com/sitemap.xml
