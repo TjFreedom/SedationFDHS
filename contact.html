@@ -162,7 +162,11 @@
         <p class="section-sub">Fill out the form and we'll reach out however you prefer. Not ready to book yet? That's fine too. Many patients start with a quick question.</p>
 
         <div class="contact-grid">
-          <form class="contact-form" id="appointment-form" novalidate aria-label="Appointment request form">
+          <form class="contact-form" id="appointment-form" name="appointment-request" method="POST" data-netlify="true" netlify-honeypot="bot-field" novalidate aria-label="Appointment request form">
+            <input type="hidden" name="form-name" value="appointment-request" />
+            <p hidden>
+              <label>Leave this field empty: <input name="bot-field" tabindex="-1" autocomplete="off" /></label>
+            </p>
             <div class="form-row">
               <div class="form-group">
                 <label for="first-name">First Name <span aria-label="required">*</span></label>
@@ -407,6 +411,6 @@
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script src="js/main.js?v=2"></script>
 </body>
 </html>

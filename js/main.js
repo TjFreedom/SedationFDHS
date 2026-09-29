@@ -152,20 +152,47 @@
         return;
       }
 
-      // Success state
       const submitBtn = form.querySelector('[type="submit"]');
-      submitBtn.textContent = '✓ Request Submitted!';
+      const submitLabel = submitBtn.textContent;
+      const existingStatus = form.querySelector('.form-success, .form-error');
+      if (existingStatus) existingStatus.remove();
+
+      submitBtn.textContent = 'Sending…';
       submitBtn.disabled = true;
-      submitBtn.style.background = '#059669';
 
-      const successMsg = document.createElement('div');
-      successMsg.className = 'form-success';
-      successMsg.setAttribute('role', 'status');
-      successMsg.innerHTML = '<strong>Thank you!</strong> We\'ve received your appointment request and will contact you within one business day. For immediate assistance, call <a href="tel:+13026130041">(302) 613-0041</a>.';
-      form.appendChild(successMsg);
+      // Send to Netlify Forms
+      fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(new FormData(form)).toString()
+      }).then(function (response) {
+        if (!response.ok) throw new Error('Form submission failed: ' + response.status);
 
-      // Scroll success message into view
-      successMsg.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        // Success state
+        submitBtn.textContent = '✓ Request Submitted!';
+        submitBtn.style.background = '#059669';
+
+        const successMsg = document.createElement('div');
+        successMsg.className = 'form-success';
+        successMsg.setAttribute('role', 'status');
+        successMsg.innerHTML = '<strong>Thank you!</strong> We\'ve received your appointment request and will contact you within one business day. For immediate assistance, call <a href="tel:+13026130041">(302) 613-0041</a>.';
+        form.appendChild(successMsg);
+
+        // Scroll success message into view
+        successMsg.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }).catch(function () {
+        // Error state
+        submitBtn.textContent = submitLabel;
+        submitBtn.disabled = false;
+
+        const errorMsg = document.createElement('div');
+        errorMsg.className = 'form-error';
+        errorMsg.setAttribute('role', 'alert');
+        errorMsg.innerHTML = '<strong>Sorry, your request didn\'t go through.</strong> Please try again, or call us at <a href="tel:+13026130041">(302) 613-0041</a>.';
+        form.appendChild(errorMsg);
+
+        errorMsg.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      });
     });
 
     // Live field validation on blur
@@ -226,6 +253,16 @@
       margin-top: 0.5rem;
     }
     .form-success a { color: #047857; font-weight: 600; }
+    .form-error {
+      background: #fee2e2;
+      border: 1px solid #fca5a5;
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      font-size: 0.9rem;
+      color: #991b1b;
+      margin-top: 0.5rem;
+    }
+    .form-error a { color: #b91c1c; font-weight: 600; }
 
     .animate-on-scroll {
       opacity: 0;
