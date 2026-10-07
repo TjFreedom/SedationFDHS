@@ -122,7 +122,7 @@ const STYLES = `
   .pe-faq summary { font-weight: 600; color: var(--color-dark); cursor: pointer; }
   .pe-faq details p { margin-top: 0.75rem; }
   .pe-card-date { font-size: 0.85rem; color: var(--color-muted); margin-bottom: 0.4rem; }
-  .pe-empty { text-align: center; color: var(--color-muted); max-width: 560px; margin: 0 auto; }
+  .pe-empty { color: var(--color-muted); max-width: 640px; margin: 0; }
   .pe-pager { text-align: center; margin-top: 2rem; }
   .pe-disclaimer { max-width: 760px; margin: 2.5rem auto 0; font-size: 0.85rem; color: var(--color-muted); font-style: italic; }
 </style>`;
