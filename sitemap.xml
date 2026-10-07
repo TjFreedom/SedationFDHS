@@ -118,6 +118,14 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- Patient Education (articles are listed in /patient-education/sitemap.xml) -->
+  <url>
+    <loc>https://delawaresedation.com/patient-education</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- Privacy Policy -->
   <url>
     <loc>https://delawaresedation.com/privacy-policy.html</loc>
