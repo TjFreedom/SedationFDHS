@@ -475,5 +475,6 @@ export default async (req) => {
 };
 
 export const config = {
-  path: [BLOG_PREFIX, `${BLOG_PREFIX}/*`],
+  // Literal strings: Netlify reads this statically at build time.
+  path: ["/patient-education", "/patient-education/*"],
 };
