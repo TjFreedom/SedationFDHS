@@ -56,7 +56,7 @@
     <priority>0.7</priority>
   </url>
 
-  <!-- Pediatric Sedation Cluster -->
+  <!-- Pediatric Sedation Cluster (clean URLs served via Netlify rewrites) -->
   <url>
     <loc>https://delawaresedation.com/pediatric-sedation-dentistry</loc>
     <lastmod>2026-06-03</lastmod>
@@ -115,14 +115,6 @@
     <loc>https://delawaresedation.com/contact.html</loc>
     <lastmod>2026-03-05</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Patient Education (articles are listed in /patient-education/sitemap.xml) -->
-  <url>
-    <loc>https://delawaresedation.com/patient-education</loc>
-    <lastmod>2026-10-07</lastmod>
-    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 

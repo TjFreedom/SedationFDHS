@@ -28,4 +28,3 @@ Allow: /
 
 # Sitemap location
 Sitemap: https://delawaresedation.com/sitemap.xml
-Sitemap: https://delawaresedation.com/patient-education/sitemap.xml

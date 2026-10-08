@@ -1,6 +1,37 @@
 [build]
   publish = "."
 
+# Clean-URL rewrites for pediatric cluster pages (canonical URLs match these)
+[[redirects]]
+  from = "/pediatric-sedation-dentistry"
+  to = "/pediatric-sedation-dentistry.html"
+  status = 200
+
+[[redirects]]
+  from = "/nitrous-oxide-for-children"
+  to = "/nitrous-oxide-for-children.html"
+  status = 200
+
+[[redirects]]
+  from = "/special-needs-pediatric-dentistry"
+  to = "/special-needs-pediatric-dentistry.html"
+  status = 200
+
+[[redirects]]
+  from = "/childrens-dental-anxiety"
+  to = "/childrens-dental-anxiety.html"
+  status = 200
+
+[[redirects]]
+  from = "/pediatric-dental-procedures-sedation"
+  to = "/pediatric-dental-procedures-sedation.html"
+  status = 200
+
+[[redirects]]
+  from = "/pediatric-sedation-parents-guide"
+  to = "/pediatric-sedation-parents-guide.html"
+  status = 200
+
 # Build files that live in the publish root but shouldn't be served
 [[redirects]]
   from = "/package.json"
