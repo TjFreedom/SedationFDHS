@@ -1,0 +1,10 @@
+{
+  "name": "delawaresedation",
+  "private": true,
+  "type": "module",
+  "description": "delawaresedation.com static site plus the Patient Education Netlify Function (Opinly)",
+  "dependencies": {
+    "@opinly/backend": "^1.6.0",
+    "@opinly/shared": "^1.6.0"
+  }
+}
